@@ -1,5 +1,9 @@
 # Release Notes
 
+## v2.1.0
+
+* Dependency updates.
+
 ## v2.0.0
 
 Note this is major release to keep the version aligned with netavark. There are no breaking changes in aardvark-dns however.
