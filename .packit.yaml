@@ -93,6 +93,7 @@ jobs:
     trigger: pull_request
     identifier: integration-fedora
     packages: [aardvark-dns-fedora]
+    skip_missing_branched_composes: true
     targets: *fedora_copr_targets
     tmt_plan: "/plans/integration"
     tf_extra_params:
@@ -152,6 +153,7 @@ jobs:
     update_release: false
     dist_git_branches: &fedora_targets
       - fedora-rawhide
+      - fedora-45
 
   # Sync to CentOS Stream
   - job: propose_downstream
